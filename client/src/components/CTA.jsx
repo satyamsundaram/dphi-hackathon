@@ -16,7 +16,7 @@ function CTA() {
                     <button className='text-[#003145] font-semibold bg-white rounded-md px-5 py-2 hover:bg-[#efefef]'><Link to="/createChallenge">Create Challenge</Link></button>
                 </div>
             </div>
-            <img src="/assets/icons/PicsArt_04-14-04.42 1.svg" alt="rocket" className='hidden md:inline-block' />
+            <img src="/assets/icons/PicsArt_04-14-04.42_1.svg" alt="rocket" className='hidden md:inline-block' />
         </div>
         <Stats />
     </div>

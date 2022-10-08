@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import SingleChallenge from './SingleChallenge';
 
-let serverURL = process.env.REACT_APP_SERVER_URL;
+let serverURL = "/api/hackathons";
 
 function Challenges() {
   const [loading, setLoading] = useState(true);

@@ -6,7 +6,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { ISOtoDateTimeLocal } from '../utils/utils';
 const axios = require("axios").default;
 
-let serverURL = process.env.REACT_APP_SERVER_URL;
+let serverURL = "/api/hackathons";
 
 function CreateChallenge() {
   const navigate = useNavigate();

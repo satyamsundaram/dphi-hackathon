@@ -8,7 +8,7 @@ import {HiChartBar} from "react-icons/hi"
 import {IoIosTimer} from "react-icons/io"
 import moment from "moment";
 
-let serverURL = process.env.REACT_APP_SERVER_URL;
+let serverURL = "/api/hackathons";
 
 function ChallengeInfo() {
 
