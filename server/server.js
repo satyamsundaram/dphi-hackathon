@@ -2,6 +2,7 @@ const express = require("express"); // middleware to create CRUD endpoints
 const mongoose = require("mongoose"); // ODM to query mongodb
 const routes = require("./routes/routes"); // endpoints and CRUD functions to perform
 const cors = require("cors"); // allow resource sharing to a different domain
+const path = require("path");
 
 const app = express(); // create an instance of express
 app.use(express.json()); // accepts data in json; based on body-parser
