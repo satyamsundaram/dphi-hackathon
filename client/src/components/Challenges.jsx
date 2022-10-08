@@ -24,7 +24,7 @@ function Challenges() {
   }, [])
 
   return (
-    <div className='bg-[#003145]'>
+    <div className='bg-[#003145] mb-10'>
         {loading && <div className='text-center'>Loading... [Please wait]</div>}
         {!loading && (
           <div className='flex justify-center flex-wrap pt-10'>

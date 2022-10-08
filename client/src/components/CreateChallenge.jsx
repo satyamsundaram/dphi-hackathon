@@ -137,7 +137,7 @@ function CreateChallenge() {
             </select>       
         </form>
         
-        <div className='flex items-center'>
+        <div className='flex items-center mb-10'>
           <button type="submit" id="submitBtn" className='ml-16 text-[#fff] bg-[#44924C] font-semibold rounded-md px-5 py-2 hover:bg-[#40864A] block my-12' onClick={(e) => submitForm(e)}>{id ? "Save Changes" : "Create Challenge"}</button>
           {loading && <p className='ml-4'>[Please wait...]</p>}
         </div>

@@ -57,23 +57,23 @@ function ChallengeInfo() {
   return (
     <>
         <Header />
-            {loading && <div>Loading...</div>}
+            {loading && <div className='m-4 text-center'>Loading...</div>}
             {!loading && (
-            <div>
+            <div className='mb-10'>
                 <div className='bg-[#003145] text-white py-16 pl-16'>
-                    <p className='bg-[#FFCE5C] w-max text-black rounded flex items-center px-2 py-1 md:pr-10 font-semibold mb-5 md:max-w-max max-w-xs'><IoIosTimer className='mr-2 hidden md:block' /> {status} {moment(status === "Starts on" ? data.startDate : data.endDate).format("LLL")} (India Standard Time)</p>
+                    <p className='bg-[#FFCE5C] md:w-max text-black rounded flex items-center px-2 py-1 md:pr-10 font-semibold mb-5 md:max-w-max w-64'><IoIosTimer className='mr-2 hidden md:block' /> {status} {moment(status === "Starts on" ? data.startDate : data.endDate).format("LLL")} (India Standard Time)</p>
                     <h1 className='text-3xl font-bold mb-5'>{data.name}</h1>
                     <div className='bg-[#F8F9FD] text-[#003145] flex items-center w-24 justify-center rounded py-1'><HiChartBar className='mr-2' /> {data.level}</div>
                 </div>
                 <div>
                     <div className='flex justify-between shadow-md pl-16 items-center pt-2'>
                         <p className='border-b-4 border-[#44924C] pb-3 text-xl'>Overview</p>
-                        <div className='pr-16 pb-2'>
+                        <div className='md:pr-16 pb-2 pr-2'>
                             <Link to={`/hackathon/${data._id}/edit`}><button className='mx-1 text-white bg-[#44924C] px-6 py-2 rounded-md'>Edit</button></Link>
                             <button className='mx-1 text-[#DC1414] border-2 border-[#DC1414] px-4 py-1 rounded-md' onClick={() => deleteHandler()}>Delete</button>
                         </div>
                     </div>
-                    <p className='pl-16 mt-10 w-3/4'>{data.description}</p>
+                    <p className='pl-16 mt-10 md:w-3/4 w-full md:pr-0 pr-10'>{data.description}</p>
                 </div>
             </div>
             )}
